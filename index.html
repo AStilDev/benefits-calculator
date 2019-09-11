@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benefits Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h2>Benefits Calculator</h2>
+    <div name="nameInputs">
+        Employee name:<br>
+        <input type="text" name="employeeName" id="employeeName" onblur="buildCalculator('employeeName')">
+        <br><br>
+        Dependent name(s):<br>
+        <div id="dependentNames">
+            <input type="text" name="dependentName" id="dependentName" onblur="buildCalculator('dependentName')">
+            <br>
+        </div>
+        <input type="button" name="addDependent" id="addDependent" value="+">
+    </div>
+      <br><br>
+      Salary after benefits:<br>
+      <input type="text" name="totalSalary" id="totalSalary" disabled="true">
+</body>
+</html>
